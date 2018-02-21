@@ -1,3 +1,6 @@
 <h1><%= @message %></h1>
-<p>This is a greeting from app/views/hello/index.html.erb</p>
-<p><%= @bonus %> </p>
+<p>This is a greeting from the view with index.html.erb</p>
+<p>Also a greeting from Iulian</p>
+<% for i in 1..@count %>
+  <p><%= i %> <%= @bonus %> </p>
+<% end %>
